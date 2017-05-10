@@ -2,7 +2,7 @@
 ##Brynnie Bean 2017
 
 Inline-style: 
-![alt text](https://brynesperson.github.io/Coolio-Portfolio/CoolioPortfolio.png "Logo Title Text 1")
+![alt text](https://brynesperson.github.io/Coolio-Portfolio/Coolio-Portfolio.png "Logo Title Text 1")
 
 
 You can use the [editor on GitHub](https://github.com/BrynEsperson/Coolio-Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
