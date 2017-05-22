@@ -1,9 +1,9 @@
 # Programming 1 Portfolio
 ## Nastassja Motro 2017
-### Programmed With Bryn Esperson and Tessa Vu
-### Contact Info-email: nastassjamotro7@gmail.com
+### Programmed With Nastassja Motro and Tessa Vu
+### Contact Info-email: brynislife@gmail.com
 ### Skyline High School
-#### To View The Website: https://nastassjamotro.github.io/Programming-1-Portfolio/
+#### To View The Website:
 
 ## Our Game
 
