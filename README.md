@@ -1,6 +1,6 @@
 #Coolio Portfolio
 
-##Brynnie Bean 2017
+##Bryn 2017
 
 Inline-style: 
 ![alt text](https://brynesperson.github.io/Coolio-Portfolio/CoolioPortfolio.png "Logo Title Text 1")
