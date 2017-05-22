@@ -3,7 +3,7 @@
 ### Programmed With Nastassja Motro and Tessa Vu
 ### Contact Info-email: brynislife@gmail.com
 ### Skyline High School
-#### To View The Website:
+#### To View The Website:https://brynesperson.github.io/Coolio-Portfolio/ (no idea if this is the right thing)
 
 ## Our Game
 
