@@ -1,0 +1,48 @@
+import java.awt.Graphics;
+
+ import java.awt.Graphics2D;
+
+ import java.awt.Rectangle;
+
+ import javax.swing.JComponent;
+public static void main(String[] args)
+{
+
+Rectangle leftRectangle = new Rectangle(
+      xLeft, yTop, 
+      width / 3, width * 2 / 3);
+Rectangle rightRectangle = new Rectangle(
+      xLeft + 2 * width / 3, yTop, 
+      width / 3, width * 2 / 3);
+Line2D.Double topLine = new Line2D.Double(
+      xLeft + width / 3, yTop, 
+      xLeft + width * 2 / 3, yTop);
+Line2D.Double bottomLine = new Line2D.Double(
+      xLeft + width / 3, yTop + width * 2 / 3, 
+      xLeft + width * 2 / 3, yTop + width * 2 / 3);
+
+//RectangleComponent.paintComponent();
+
+
+public class RectangleComponent extends JComponent
+{
+ //  public void paintComponent(Graphics g)
+  // {  
+     // Drawing instructions.
+   }
+//}
+//public class SquareComponent extends JComponent{
+// class MyPanel {
+
+    // int rectangleX = 50;
+     //int rectangleY = 50;
+     //int rectangleW = 20;
+    //int rectangleH = 20;
+
+     //Graphics2D g2 = (Graphics2D) g; {
+       // g2.setColor(Color.RED); 
+       // g.setColor(color.RED);
+       // g2.fillRect(rectangleX,rectangleY,rectangleW,rectangleH);
+    //}
+//}
+//}
