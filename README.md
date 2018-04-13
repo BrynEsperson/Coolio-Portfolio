@@ -961,7 +961,7 @@ Here are the new and improved designs:
 
 
 
-#other projects:
+# Other Projects:
 
 
 https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/zoog.pde
