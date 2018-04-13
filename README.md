@@ -718,7 +718,7 @@ void draw() {
 # Hope you enjoy our game! :)
 ______________________________________
 
-##___RUN___
+## ___RUN___ ## 
 
 RUN was originally an rpg game- until it was deleted. Now it's a sad little version of the snake game. But the creator (me, heheh) is still working on it, sometime in the future it will resemble the original design. For now, this is the code:
 
