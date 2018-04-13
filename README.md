@@ -946,7 +946,7 @@ public class Board extends JPanel implements ActionListener {
 It's painfully simple, but at least I'm trying to recover what was lost. Still trying to figure out how to manipulate it to stop functioning completely like a snake game without it panicking.
 
 Here are three of the original designs for a coin, the main character, and the cronies of the main villain. The main villain is not included because that file was lost with the rest of the original material.
-
+//
 
 
 
@@ -957,4 +957,27 @@ Here are three of the original designs for a coin, the main character, and the c
 
 
 Here are the new and improved designs:
+
+
+
+
+#other projects:
+
+
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/zoog.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/timeline.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/verdammit.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/probablythestarterthing.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/parttwo.txt
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/forgithub.java
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/cute_little_spaceship.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/cars.zip
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/calculator.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/buttontest.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/aaron_bur_sir%20(1).pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/_config.yml
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/Shapes%20(7).pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/ScreenSaver.pde
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/RUN-master.zip
+https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/I%20am%20not%20fast.png
 
