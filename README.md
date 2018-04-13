@@ -976,8 +976,5 @@ https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/calculator.pde
 https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/buttontest.pde
 https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/aaron_bur_sir%20(1).pde
 https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/_config.yml
-https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/Shapes%20(7).pde
-https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/ScreenSaver.pde
-https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/RUN-master.zip
-https://github.com/BrynEsperson/Coolio-Portfolio/blob/master/I%20am%20not%20fast.png
+
 
