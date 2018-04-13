@@ -676,7 +676,7 @@ void draw() {
 }
 ```
 
-**This is how it would look like**
+**This is what it would look like**
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/dcwins.png "Logo Title Text 1")
 
@@ -716,3 +716,245 @@ void draw() {
 ## THE END
 
 # Hope you enjoy our game! :)
+______________________________________
+
+___RUN____
+
+RUN was originally an rpg game- until it was deleted. Now it's a sad little version of the snake game. But the creator (me, heheh) is still working on it, sometime in the future it will resemble the original design. For now, this is the code:
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+
+public class Board extends JPanel implements ActionListener {
+
+    private final int B_WIDTH = 300;
+    private final int B_HEIGHT = 300;
+    private final int PLANT_SIZE = 10;
+    private final int ALL_PLANT = 900;
+    private final int RAND_POS = 29;
+    private final int DELAY = 140;
+
+    private final int x[] = new int[ALL_PLANT];
+    private final int y[] = new int[ALL_PLANT];
+
+    private int plant;
+    private int plant_x;
+    private int plant_y;
+
+    private boolean leftDirection = false;
+    private boolean rightDirection = true;
+    private boolean upDirection = false;
+    private boolean downDirection = false;
+    private boolean inGame = true;
+
+
+    private Image plant;
+    private Image weed;
+    private Image coin;
+
+    }
+
+    private void loadImages() {
+
+        ImageIcon iid = new ImageIcon("plant.png");
+        coin = iid.getImage();
+
+        ImageIcon iia = new ImageIcon("weed.png");
+        plant = iia.getImage();
+
+        ImageIcon iih = new ImageIcon("coin.png");
+        head = iih.getImage();
+    }
+
+    private void initGame() {
+
+        coin = 300;
+
+        for (int z = 0; z < dots; z++) {
+            x[z] = 50 - z * 10;
+            y[z] = 50;
+        }
+
+        locateCoin();
+
+        timer = new Timer(DELAY, this);
+        timer.start();
+    }
+    
+    private void doDrawing(Graphics g) {
+        
+        if (inGame) {
+
+            g.drawImage(coin, coin_x, coin_y, this);
+
+            for (int z = 0; z < dots; z++) {
+                if (z == 0) {
+                    g.drawImage(plant, x[z], y[z], this);
+                } else {
+                    g.drawImage(weed, x[z], y[z], this);
+                }
+            }
+
+            Toolkit.getDefaultToolkit().sync();
+
+        } else {
+
+            gameOver(g);
+        }        
+    }
+
+    private void gameOver(Graphics g) {
+        
+        String msg = "Game Over";
+        Font small = new Font("Helvetica", Font.BOLD, 14);
+        FontMetrics metr = getFontMetrics(small);
+
+        g.setColor(Color.white);
+        g.setFont(small);
+        g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, B_HEIGHT / 2);
+    }
+
+    private void checkApple() {
+
+        if ((x[0] == apple_x) && (y[0] == apple_y)) {
+
+            dots++;
+            locateApple();
+        }
+    }
+
+    private void move() {
+
+        for (int z = coins; z > 0; z--) {
+            x[z] = x[(z - 1)];
+            y[z] = y[(z - 1)];
+        }
+
+        if (leftDirection) {
+            x[0] -= COINS_SIZE;
+        }
+
+        if (rightDirection) {
+            x[0] += COINS_SIZE;
+        }
+
+        if (upDirection) {
+            y[0] -= COINS_SIZE;
+        }
+
+        if (downDirection) {
+            y[0] += COINS_SIZE;
+        }
+    }
+
+    private void checkCollision() {
+
+        for (int z = coins; z > 0; z--) {
+
+            if ((z > 4) && (x[0] == x[z]) && (y[0] == y[z])) {
+                inGame = false;
+            }
+        }
+
+        if (y[0] >= B_HEIGHT) {
+            inGame = false;
+        }
+
+        if (y[0] < 0) {
+            inGame = false;
+        }
+
+        if (x[0] >= B_WIDTH) {
+            inGame = false;
+        }
+
+        if (x[0] < 0) {
+            inGame = false;
+        }
+        
+        if(!inGame) {
+            timer.stop();
+        }
+    }
+
+    private void locateCoin() {
+
+        int r = (int) (Math.random() * RAND_POS);
+        coin_x = ((r * DOT_SIZE));
+
+        r = (int) (Math.random() * RAND_POS);
+        coin_y = ((r * coin_SIZE));
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        if (inGame) {
+
+            checkCoin();
+            checkCollision();
+            move();
+        }
+
+        repaint();
+    }
+
+    private class TAdapter extends KeyAdapter {
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+
+            int key = e.getKeyCode();
+
+            if ((key == KeyEvent.VK_LEFT) && (!rightDirection)) {
+                leftDirection = true;
+                upDirection = false;
+                downDirection = false;
+            }
+
+            if ((key == KeyEvent.VK_RIGHT) && (!leftDirection)) {
+                rightDirection = true;
+                upDirection = false;
+                downDirection = false;
+            }
+
+            if ((key == KeyEvent.VK_UP) && (!downDirection)) {
+                upDirection = true;
+                rightDirection = false;
+                leftDirection = false;
+            }
+
+            if ((key == KeyEvent.VK_DOWN) && (!upDirection)) {
+                downDirection = true;
+                rightDirection = false;
+                leftDirection = false;
+            }
+        }
+    }
+}
+
+It's painfully simple, but at least I'm trying to recover what was lost. Still trying to figure out how to manipulate it to stop functioning completely like a snake game without it panicking.
+
+Here are three of the original designs for a coin, the main character, and the cronies of the main villain. The main villain is not included because that file was lost with the rest of the original material.
+
+
+
+
+
+
+
+
+
+
+Here are the new and improved designs:
+
